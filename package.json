@@ -5,10 +5,10 @@
   "main": "pre_build_webpack.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kossnocorp/pre-build-webpack"
+    "url": "https://github.com/benelliott/pre-build-webpack"
   },
   "keywords": ["webpack"],
-  "author": "Sasha Koss <kossnocorp@gmail.com>",
+  "author": "Ben Elliott <bengelliott@gmail.com>",
   "license": "MIT"
 }
 

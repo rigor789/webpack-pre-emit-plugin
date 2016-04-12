@@ -1,12 +1,14 @@
-# on-build-webpack
+# pre-build-webpack
 
 [Webpack](http://webpack.github.io/) plugin that gives ability to add callback
-after build.
+before build.
+
+Inspired by [on-build-webpack](https://github.com/kossnocorp/on-build-webpack), which provides a hook for the end of the build.
 
 ## Installation
 
 ```
-npm install --save-dev on-build-webpack
+npm install --save-dev pre-build-webpack
 ```
 
 ## Usage
@@ -14,13 +16,13 @@ npm install --save-dev on-build-webpack
 In config file:
 
 ``` javascript
-var WebpackOnBuildPlugin = require('on-build-webpack');
+var WebpackPreBuildPlugin = require('pre-build-webpack');
 
 // ...
   module: {
     plugins: [
-      new WebpackOnBuildPlugin(function(stats) {
-        // Do whatever you want...
+      new WebpackPreBuildPlugin(function(stats) {
+        // Do whatever you want before build starts...
       }),
     ]
   },
