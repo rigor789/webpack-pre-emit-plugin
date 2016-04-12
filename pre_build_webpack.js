@@ -1,12 +1,12 @@
 /**
- * @module WebpackOnBuildPlugin
+ * @module WebpackPreBuildPlugin
  */
 
 /**
  * @constructor
  * @param {onBuildCallback} callback - will be called right after build.
  */
-function WebpackOnBuildPlugin(callback) {
+function WebpackPreBuildPlugin(callback) {
   this.callback = callback;
 };
 
@@ -18,9 +18,9 @@ function WebpackOnBuildPlugin(callback) {
 /**
  * @param {object} compiler
  */
-WebpackOnBuildPlugin.prototype.apply = function(compiler) {
-  compiler.plugin('done', this.callback);
+WebpackPreBuildPlugin.prototype.apply = function(compiler) {
+  compiler.plugin('compile', this.callback);
 };
 
-module.exports = WebpackOnBuildPlugin;
+module.exports = WebpackPreBuildPlugin;
 

@@ -1,11 +1,11 @@
 {
-  "name": "on-build-webpack",
+  "name": "pre-build-webpack",
   "version": "0.1.0",
   "description": "Webpack plugin that gives ability to add callback after build",
-  "main": "on_build_webpack.js",
+  "main": "pre_build_webpack.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kossnocorp/on-build-webpack"
+    "url": "https://github.com/kossnocorp/pre-build-webpack"
   },
   "keywords": ["webpack"],
   "author": "Sasha Koss <kossnocorp@gmail.com>",
