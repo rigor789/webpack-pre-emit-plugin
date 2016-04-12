@@ -4,14 +4,14 @@
 
 /**
  * @constructor
- * @param {onBuildCallback} callback - will be called right after build.
+ * @param {preBuildCallback} callback - will be called before build.
  */
 function WebpackPreBuildPlugin(callback) {
   this.callback = callback;
-};
+}
 
 /**
- * @callback onBuildCallback
+ * @callback preBuildCallback
  * @param {object} stats - webpack stats object
  */
 
