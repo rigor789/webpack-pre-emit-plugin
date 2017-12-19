@@ -1,14 +1,14 @@
 {
-  "name": "pre-build-webpack",
+  "name": "webpack-pre-emit-plugin",
   "version": "0.1.0",
-  "description": "Webpack plugin that gives ability to add callback before build",
-  "main": "pre_build_webpack.js",
+  "description": "Webpack plugin that gives ability to add callback before emit (Async)",
+  "main": "webpack_pre_emit_plugin.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/benelliott/pre-build-webpack"
+    "url": "https://github.com/rigor789/webpack-pre-emit-plugin"
   },
-  "keywords": ["webpack"],
-  "author": "Ben Elliott <bengelliott@gmail.com>",
+  "keywords": ["webpack", "pre-emit"],
+  "author": "rigor789",
   "license": "MIT"
 }
 

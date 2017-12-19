@@ -1,14 +1,14 @@
-# pre-build-webpack
+# webpack-pre-emit-plugin
 
-[Webpack](http://webpack.github.io/) plugin that gives ability to add callback
-before build.
+[Webpack](http://webpack.js.org/) plugin that gives ability to add callback
+before emit.
 
-Inspired by [on-build-webpack](https://github.com/kossnocorp/on-build-webpack), which provides a hook for the end of the build.
+Inspired by [pre-build-webpack](https://github.com/benelliott/pre-build-webpack), which provides a hook before the start of the build.
 
 ## Installation
 
 ```
-npm install --save-dev pre-build-webpack
+npm install --save-dev webpack-pre-emit-plugin
 ```
 
 ## Usage
@@ -16,13 +16,14 @@ npm install --save-dev pre-build-webpack
 In config file:
 
 ``` javascript
-var WebpackPreBuildPlugin = require('pre-build-webpack');
+var WebpackPreEmitPlugin = require('webpack-pre-emit-plugin');
 
 // ...
   module: {
     plugins: [
-      new WebpackPreBuildPlugin(function(stats) {
+      new WebpackPreEmitPlugin(function(stats, callback) {
         // Do whatever you want before build starts...
+        callback(); // when done
       }),
     ]
   },
